@@ -50,3 +50,17 @@ public:
 		return floor(NumberDecorator::evaluate());
 	}
 };
+
+class AbsoluteValue : public NumberDecorator
+{
+public:
+	AbsoluteValue(Base *child) : NumberDecorator(child)
+	{
+
+	}
+
+	double evaluate()
+	{
+		return fabs(NumberDecorator::evaluate());
+	}
+};
