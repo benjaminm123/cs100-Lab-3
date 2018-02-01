@@ -3,7 +3,6 @@
 #include "Composite.h"
 
 #include <cmath>
-#include <math.h>
 
 class NumberDecorator : public Base
 {
