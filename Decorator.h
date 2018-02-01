@@ -36,3 +36,17 @@ public:
 		return ceil(NumberDecorator::evaluate());
 	}
 };
+
+class Floor : public NumberDecorator
+{
+public:
+	Floor(Base *child) : NumberDecorator(child)
+	{
+
+	}
+
+	double evaluate()
+	{
+		return floor(NumberDecorator::evaluate());
+	}
+};
